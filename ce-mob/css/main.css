@@ -65,7 +65,7 @@ body {
 }
 
 .wrapper {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 /* ===================
@@ -149,18 +149,21 @@ nav a:hover {
 
 .header-container{
     background-color: #005c8c;
-    background-image: linear-gradient(bottom, #004179 0%, #00559f 100%);
-    background-image: -o-linear-gradient(bottom, #004179 0%, #00559f 100%);
-    background-image: -moz-linear-gradient(bottom, #004179 0%, #00559f 100%);
-    background-image: -webkit-linear-gradient(bottom, #004179 0%, #00559f 100%);
-    background-image: -ms-linear-gradient(bottom, #004179 0%, #00559f 100%);
+    background-image: linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: -webkit-linear-gradient(bottom, #004b97 0%, #0060c2 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
     -pie-background: linear-gradient(#00559f, #004179);
     behavior: url(/cdn/htc/PIE.htc);   
     color:#fff;
-    border-bottom: ;
+    border-bottom: 1px solid #003a76;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    z-index:999999;
+    position: relative;
 }
 
-header{padding:10px 0;}
+header{padding:6px 0;}
 
 .title{
     margin:10px 0;
@@ -172,36 +175,51 @@ header{padding:10px 0;}
 }
 
 .location-container{
-    background:#1751AD;
+    background:#1160dc;
     color:#fff;
 }
 
 .location{
-    padding:10px 0;
+    padding:6px 0;
 }
 
-.weather-icon{
-    width:24px;
-    height:24px;
-    font-size:30px;
-    margin-right:5px;
+
+.ico-weather{
+    width:21px; height:18px;
+    margin:2px 4px 0 0;
+    background-image:url(../cdn/image/ico_weather.png);
 }
 
 .location-city{
     font-size:10px;
-    line-height:12px;
+    line-height:22px;
     text-transform: uppercase;
+    margin-left:10px;
+    color:#b3d0ff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.location-state{
+    opacity:0.5;
+}
+
+.location-weather{
+    background-color:#104fb4;
+    border-radius:3px;
+    padding:2px 6px 2px 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
 }
 
 .location-temp{
-    font-size:15px;
+    font-size:13px;
     font-weight:bold;
     line-height:14px;
 }
 
 .super{
     vertical-align:super;
-    font-size:0.6em
+    font-size:0.7em;
+    opacity:0.8;
 }
 
 .main{
@@ -417,6 +435,12 @@ and (min-device-width : 640px) {
         background:url(../cdn/image/logo-2x.png);
         background-size:177px 40px;
     }
+
+    .ico-weather{
+        background-size:225px 18px;
+        background-image:url(../cdn/image/ico_weather-2x.png);
+    }
+
 }
 
 /* ==========================================================================
