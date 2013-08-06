@@ -148,13 +148,27 @@ nav a:hover {
    ========================================================================== */
 
 .header-container{
-    background: #2061C9;
+    background-color: #005c8c;
+    background-image: linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: -webkit-linear-gradient(bottom, #004179 0%, #00559f 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    -pie-background: linear-gradient(#00559f, #004179);
+    behavior: url(/cdn/htc/PIE.htc);   
     color:#fff;
+    border-bottom: ;
 }
 
+header{padding:10px 0;}
+
 .title{
-    font-size:24px;
     margin:10px 0;
+    background:url(../cdn/image/logo.png);
+    width:177px;
+    height:40px;
+    text-indent: -99999px;
+    margin:0 auto;
 }
 
 .location-container{
@@ -395,6 +409,12 @@ and (min-device-width : 640px) {
 
     .categories .col{
         margin-right:40px;
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio: 2) {
+    .title{
+        background:url(../cdn/image/logo-2x.png);
     }
 }
 
