@@ -194,6 +194,13 @@ nav a:hover {
     padding-top:10px;
 }
 
+.main h2{
+    font-family:"PT Sans", sans-serif;
+    font-size:15px;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+}
+
 .banner-wrapper{
     background-color:#222;
 }
@@ -255,9 +262,16 @@ nav a:hover {
     margin-right:20px;
 }
 
-.searchbar{
+.searchbar-wrapper{
     border:1px solid #ccc;
     border-radius:3px;
+    overflow:hidden;
+    position:relative;
+    margin-bottom: 50px;
+}
+
+.searchbar{
+    padding-right:40px;
 }
 
 .searchbar input{
@@ -265,22 +279,83 @@ nav a:hover {
     background:none;
 }
 
-.searchbar input[type="text"]{
+.search-input{
     font-size:20px;
     line-height:28px;
-    padding: 6px 8px;
+    padding: 6px 0;
+    width:100%;
 }
 
 .searchbar input[type="text"]:focus{
     outline:0;
 }
 
-.search-submit{
+.search-button{
     border:none;
     background:none;
     border-left: 1px solid #ccc;
     width:40px;
     height:40px;
+    position: absolute;
+    top:0;
+    right:0;
+    box-sizing:border-box;
+}
+
+.ico-search{
+    background: url(../cdn/image/ico_search.png) no-repeat;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin: 0 auto;
+    margin-top:2px;
+}
+
+.event-listing{
+    list-style: none;
+    margin:0; padding:0;
+}
+
+.event-listing > li{
+    margin-bottom:30px;
+}
+
+.listing-thumb{
+    width:80px;
+    height:70px;
+    background:#ddd;
+    margin-right:10px;
+}
+
+.listing-title{
+    margin: 0 0 5px;
+    padding:0;
+    font-size:13px;
+    line-height:15px;
+    font-weight:bold;
+}
+
+.listing-venue, .listing-address{
+    font-size:11px;
+    line-height:16px;
+}
+
+.listing-venue{
+    text-transform: uppercase;
+    color:#000;
+}
+
+.listing-address{
+    color:#888;
+}
+
+a:link, a:visited{
+    color:#0F36D4;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 @media only screen 
@@ -292,7 +367,11 @@ and (min-device-width : 320px) {
       
     .slide{
         width:280px;
-        height:180px;
+        height:140px;
+    }
+
+    .listing-info{
+        max-width:170px;
     }
 
 }
@@ -305,8 +384,8 @@ and (min-device-width : 640px) {
     }
 
     .slide{
-        width:480px;
-        height:240px;
+        width:440px;
+        height:220px;
     }
 
     .categories{
