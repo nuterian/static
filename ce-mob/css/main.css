@@ -149,11 +149,11 @@ nav a:hover {
 
 .header-container{
     background-color: #005c8c;
-    background-image: linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: linear-gradient(bottom, #004179 0%, #00559f 100%);
+    background-image: -o-linear-gradient(bottom, #004179 0%, #00559f 100%);
+    background-image: -moz-linear-gradient(bottom, #004179 0%, #00559f 100%);
     background-image: -webkit-linear-gradient(bottom, #004179 0%, #00559f 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(0,81,121) 0%, rgb(0,104,156) 100%);
+    background-image: -ms-linear-gradient(bottom, #004179 0%, #00559f 100%);
     -pie-background: linear-gradient(#00559f, #004179);
     behavior: url(/cdn/htc/PIE.htc);   
     color:#fff;
