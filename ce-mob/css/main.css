@@ -192,7 +192,7 @@ header{padding:6px 0;}
 
 .location-city{
     font-size:10px;
-    line-height:22px;
+    line-height:24px;
     text-transform: uppercase;
     margin-left:10px;
     color:#b3d0ff;
@@ -337,12 +337,11 @@ header{padding:6px 0;}
 
 .ico-search{
     background: url(../cdn/image/ico_search.svg) no-repeat;
-    display: inline-block;
+    display: block;
     width:20px;
     height:20px;
     background-size: 20px 20px;
     margin: 0 auto;
-    margin-top:2px;
 }
 
 .event-listing{
