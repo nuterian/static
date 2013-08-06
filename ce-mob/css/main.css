@@ -303,10 +303,11 @@ nav a:hover {
 }
 
 .ico-search{
-    background: url(../cdn/image/ico_search.png) no-repeat;
+    background: url(../cdn/image/ico_search.svg) no-repeat;
     display: inline-block;
     width:20px;
     height:20px;
+    background-size: 20px 20px;
     margin: 0 auto;
     margin-top:2px;
 }
