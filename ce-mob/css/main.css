@@ -318,13 +318,22 @@ header{padding:5px 0;}
 .cat-ico-social{
     background-position: -16px 0;
 }
+.cat-active .cat-ico-social{
+    background-position: -16px -16px;
+}
 
 .cat-ico-places{
     background-position: -32px 0;
 }
+.cat-active .cat-ico-places{
+    background-position: -16px -16px;
+}
 
 .cat-ico-movies{
     background-position: -48px 0;
+}
+.cat-active .cat-ico-movies{
+    background-position: -16px -16px;
 }
 
 
@@ -334,13 +343,11 @@ header{padding:5px 0;}
 
 .trending-events h2{
     font-family:"PT Sans", sans-serif;
-    font-size:12px;
+    font-size:14px;
     font-weight:bold;
     color:#888;
     text-shadow: inset 0 1px 0 #000;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin: 5px 0 10px 10px;
+    margin: 5px 0 0px 10px;
 }
 
 .banner-wrapper{
@@ -579,6 +586,86 @@ background-image: -ms-linear-gradient(bottom, #005179 0%, #00689C 100%);
     margin: 0 auto;
 }
 
+.scrollable-wrapper{
+    width:100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.scrollable{
+    width: 3500px;
+    white-space: nowrap;
+    position: relative;
+    left: 0;
+    padding: 10px 0 10px;
+}
+
+.scroll-event {
+    width: 100px;
+    float: left;
+    margin: 0 0 0 10px;
+    font-size: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+a.scroll-event{
+    color:#444;
+}
+a.scroll-event:hover{
+    text-decoration:none;
+}
+
+.event-thumb-container{
+    position: relative;
+}
+
+.event-thumb{
+    width:100px;
+    height:100px;
+    background-size:100px auto;
+    border-radius:3px;
+}
+
+.event-thumb-info{
+    background:url(../cdn/image/thumb_highlight.png) 0 0 repeat-x;
+    background-size:1px 50px;
+    color:#fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    position: absolute;    
+    bottom:0; left:0;
+    width:90px;
+    padding: 0 5px;
+    border-radius:3px;
+    font-weight:bold;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.event-info{
+    color:#333;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:9px;
+    width:100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.event-month{
+    font-weight:normal;
+    color:#666;
+}
+
+.event-price{
+    font-weight:bold;
+    color:#aaa;
+    font-size:9px;
+    line-height:10px;
+    margin-top:-5px;
+}
+
+/*
 .event-listing{
     list-style: none;
     margin:0; padding:0;
@@ -758,7 +845,7 @@ only screen and (min-device-pixel-ratio: 2) {
         background-image:url(../cdn/image/logo@2x.png);
         background-size: 140px 32px;
     }
-    
+
     .ico-weather{
         background-size:225px 18px;
         background-image:url(../cdn/image/ico_weather-2x.png);
