@@ -759,6 +759,7 @@ and (min-device-width : 640px) {
 
     .cat-ico{
         background-image: url(../cdn/image/ico_categories@2x.png);
+        background-size: 128px 64px;
     }
 
 
