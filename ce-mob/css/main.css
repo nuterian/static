@@ -589,6 +589,7 @@ background-image: -ms-linear-gradient(bottom, #005179 0%, #00689C 100%);
 .scrollable-wrapper{
     width:100%;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
 }
 
@@ -662,7 +663,7 @@ a.scroll-event:hover{
     color:#aaa;
     font-size:9px;
     line-height:10px;
-    margin-top:-5px;
+    margin-top:-7px;
 }
 
 /*
