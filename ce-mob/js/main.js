@@ -1,6 +1,6 @@
 window.featuredEventSlider = Swipe(document.getElementById('featuredEventSlider'),
 	{
-		auto:2000,
+		auto:4000,
 		continuous: true,
 	    callback: function(pos) {
 
