@@ -747,15 +747,17 @@ and (min-device-width : 640px) {
 */
 
 @media(-webkit-min-device-pixel-ratio: 2) {
-    .title{
-        background:url(../cdn/image/logo@2x.png);
-        background-size:177px 40px;
-    }
 
     .ico-weather{
         background-size:225px 18px;
         background-image:url(../cdn/image/ico_weather-2x.png);
     }
+
+    .cat-ico{
+        background-image: url(../cdn/image/ico_categories@2x.png);
+        background-size: 128px 64px;
+    }
+
 
 }
 
