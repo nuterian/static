@@ -208,7 +208,7 @@ header{padding:5px 0;}
 
 
 .title{
-    background:url(../cdn/image/logo.png);
+    background-image:url(../cdn/image/logo.png);
     width:140px;
     height:32px;
     background-size: 140px 32px;
@@ -761,9 +761,8 @@ only screen and (min-device-pixel-ratio: 2) {
 
     .cat-ico{
         background-image: url(../cdn/image/ico_categories@2x.png);
-        background-size: 128px 64px;
+        background-size: 64px 32px;
     }
-
 
 }
 
