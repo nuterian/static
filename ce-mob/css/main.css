@@ -181,7 +181,7 @@ header{padding:5px 0;}
 }
 
 .header-button img{
-    margin-top:-1px;
+    margin-top:-3px;
     background-size: 18px 18px;
     width:18px;
     height:18px;
@@ -287,6 +287,7 @@ header{padding:5px 0;}
     width:16px;
     height:16px;
     margin-right:4px;
+    background-image: url(../cdn/image/ico_categories.png);
 }
 
 .cat-title{
@@ -308,7 +309,6 @@ header{padding:5px 0;}
 }
 
 .cat-ico-events{
-    background-image: url(../cdn/image/ico_categories.png);
     background-position: 0 0;
 }
 .cat-active .cat-ico-events{
@@ -316,17 +316,14 @@ header{padding:5px 0;}
 }
 
 .cat-ico-social{
-    background-image: url(../cdn/image/ico_categories.png);
     background-position: -16px 0;
 }
 
 .cat-ico-places{
-    background-image: url(../cdn/image/ico_categories.png);
     background-position: -32px 0;
 }
 
 .cat-ico-movies{
-    background-image: url(../cdn/image/ico_categories.png);
     background-position: -48px 0;
 }
 
@@ -747,6 +744,7 @@ and (min-device-width : 640px) {
         margin-right:40px;
     }
 }
+*/
 
 @media(-webkit-min-device-pixel-ratio: 2) {
     .title{
@@ -759,8 +757,13 @@ and (min-device-width : 640px) {
         background-image:url(../cdn/image/ico_weather-2x.png);
     }
 
+    .cat-ico{
+        background-image: url(../cdn/image/ico_categories@2x.png);
+    }
+
+
 }
-*/
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
