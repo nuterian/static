@@ -16,10 +16,48 @@
     
         <div class="header-container">
             <header class="wrapper clearfix">
+                <div class="header-button" id="headerOptions"><img src="cdn/image/ico_header_options.png"></div>
                 <h1 class="title">Cityevents.com</h1>
+                <div class="header-button" id="headerLocation"><img src="cdn/image/ico_header_location.png"></div>
             </header>
         </div>
+
+        <div class="subheader-container">
+            <div class="location">
+                <div class="location-city">JOHNSON SETTLEMENT CHARLOTTE C, <span class="location-state">NB</span></div>
+                <div class="location-temp">28<span class="super">°C</span></div>
+            </div>
+
+            <div class="category-tabs clearfix">
+                <div class="cat-tab cat-active clearfix">
+                    <div class="col cat-ico cat-ico-events"></div>
+                    <div class="col cat-title">Events</div>
+                </div> 
+                <div class="cat-tab">
+                    <div class="col cat-ico cat-ico-social"></div>
+                    <div class="col cat-title">Social</div>
+                </div> 
+                <div class="cat-tab">
+                    <div class="col cat-ico cat-ico-places"></div>
+                    <div class="col cat-title">Places</div>
+                </div> 
+                <div class="cat-tab">
+                    <div class="col cat-ico cat-ico-movies"></div>
+                    <div class="col cat-title">Movies</div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="searchbar-wrapper clearfix">
+            <div class="searchbar">
+                <div style="position:relative; zoom:1; padding: 0 10px">
+                    <input class="search-input" maxlength="2048" value="" title="" size="41" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="outline: none;">
+                </div>
+            </div>
+            <button type="submit" class=" search-button"><span class="ico-search"></span></button>
+        </div>
         
+        <!--
         <div class="location-container">
             <div class="location wrapper clearfix">
                 <div class="location-weather clearfix col">
@@ -29,21 +67,40 @@
                 <div class="col location-city">JOHNSON SETTLEMENT CHARLOTTE C, <span class="location-state">NB</span></div>
             </div>
         </div>
+        -->
 
         <div class="banner-wrapper">
             <div class="banner clearfix">
-                <div class="banner-title">Unmask Your City</div>
                 <div id="featuredEventSlider" class="featured-rotator swipe">
                     <div class="featured-event-container swipe-wrap">
-                        <div><div style="background-color:#FF0059;" class="slide">1</div></div>
+                        <div>
+                            <div class="slide">
+                                <div class="event-art" style="background-image:url(cdn/image/banner_1.jpg)"></div>
+                                <div class="event-slide-title">
+                                    <div class="event-slide-name">Justin Timberlake and Jay-Z</div>
+                                    <div class="event-slide-venue">Madison Square Garden</div>
+                                </div>
+                                <div class="event-slide-date"><div class="event-slide-month">Sep</div><div>30</div></div>
+                                <div class="event-slide-price"><span class="super">$</span>40</div>
+                            </div>
+                        </div>
                         <div><div style="background-color:#5DAD1F;" class="slide">2</div></div>
                         <div><div style="background-color:#2374F7;" class="slide">3</div></div>
                         <div><div style="background-color:#FFDD00;" class="slide">4</div></div>
                     </div>
                 </div>  
+                <nav>
+                    <ul id="position">
+                      <li class="on"></li>
+                      <li class=" "></li>
+                      <li class=" "></li>
+                      <li class=" "></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         
+        <!--
         <div class="main-wrapper">
             <div class="main wrapper clearfix">
                 
@@ -64,6 +121,7 @@
 
             </div>
         </div>
+        -->
 
         <div class="trending-events clearfix">
             <h2>Trending</h2>
