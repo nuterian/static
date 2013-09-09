@@ -754,6 +754,11 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 
 only screen and (min-device-pixel-ratio: 2) {
 
+    .title{
+        background-image:url(../cdn/image/logo@2x.png);
+        background-size: 140px 32px;
+    }
+    
     .ico-weather{
         background-size:225px 18px;
         background-image:url(../cdn/image/ico_weather-2x.png);
