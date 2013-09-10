@@ -14,3 +14,10 @@ window.featuredEventSlider = Swipe(document.getElementById('featuredEventSlider'
 	});
 
 var bullets = document.getElementById('position').getElementsByTagName('li');
+
+var $curr_cat_tab = $('.cat-active');
+$('.cat-tab').click(function(){
+	$curr_cat_tab.removeClass('cat-active');
+	$curr_cat_tab = $(this);
+	$curr_cat_tab.addClass('cat-active');
+});
