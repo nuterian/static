@@ -306,7 +306,7 @@ header{padding:5px 0;}
 
 .cat-tab.cat-active{
     background:#fff;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
 }
 
 .cat-ico-events{
@@ -459,7 +459,7 @@ header{padding:5px 0;}
 }
 .event-art{
     width: 280px;
-    height:140px;
+    height:160px;
     background-size: 280px auto;
     background-position: 0 -40px;
     border-radius:3px;
@@ -490,6 +490,8 @@ header{padding:5px 0;}
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
     position: relative;
     display:block;
+    width:280px;
+    height:160px;
 }
 
 .banner nav{
@@ -671,7 +673,7 @@ a.scroll-event:hover{
 }
 
 .footer{
-    font-size:10px;
+    font-size:9px;
     line-height:20px;
     color:#888;
     padding: 10px 0;
@@ -812,48 +814,6 @@ a:hover{
 }
 
 
-
-@media only screen 
-and (min-device-width : 320px) {
-    
-    .searchbar input[type="text"]{
-        width: 220px;
-    }
-      
-    .slide{
-        width:280px;
-        height:140px;
-    }
-
-    .listing-info{
-        max-width:170px;
-    }
-
-}
-/*
-
-@media only screen 
-and (min-device-width : 640px) {
-
-    .searchbar input[type="text"]{
-        width: 540px;
-    }
-
-    .slide{
-        width:440px;
-        height:220px;
-    }
-
-    .categories{
-        font-size:14px;
-    }
-
-    .categories .col{
-        margin-right:40px;
-    }
-}
-*/
-
 @media only screen and (min--moz-device-pixel-ratio: 2),
 
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -877,93 +837,6 @@ only screen and (min-device-pixel-ratio: 2) {
         background-size: 64px 32px;
     }
 
-}
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-/*@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== 
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== *
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-
-/* ============
-    WIDE: Menu
-   ============ 
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ 
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-*/
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
 }
 
 /* ==========================================================================
