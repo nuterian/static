@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (min-device-width : 320px) and (max-device-width : 480px)"> 
+        <link rel="stylesheet" href="css/tablet.css" media="screen and (min-device-width : 768px) and (max-device-width : 1024px)"> 
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+    
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <div class="header-button" id="headerOptions"><img src="cdn/image/ico_header_options.svg"></div>
+                <h1 class="title">Cityevents.com</h1>
+                <div class="header-button" id="headerLocation"><img src="cdn/image/ico_header_location.svg"></div>
+            </header>
+        </div>
+
+        <div class="subheader-container">
+            <div class="location">
+                <div class="location-city">JOHNSON SETTLEMENT CHARLOTTE C, <span class="location-state">NB</span></div>
+                <div class="location-temp">28<span class="super">°C</span></div>
+            </div>
+
+            <div class="category-tabs clearfix">
+                <div class="cat-tab cat-active clearfix">
+                    <div class="col cat-ico cat-ico-events"></div>
+                    <div class="col cat-title">Events</div>
+                </div> 
+                <div class="cat-tab clearfix">
+                    <div class="col cat-ico cat-ico-social"></div>
+                    <div class="col cat-title">Social</div>
+                </div> 
+                <div class="cat-tab clearfix">
+                    <div class="col cat-ico cat-ico-places"></div>
+                    <div class="col cat-title">Places</div>
+                </div> 
+                <div class="cat-tab clearfix">
+                    <div class="col cat-ico cat-ico-movies"></div>
+                    <div class="col cat-title">Movies</div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="searchbar-wrapper clearfix">
+            <div class="searchbar">
+                <div style="position:relative; zoom:1; padding: 0 5px">
+                    <input class="search-input" placeholder="Search Events near you..." maxlength="2048" value="Concert" title="" size="41" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="outline: none;" >
+                </div>
+            </div>
+            <button type="submit" class=" search-button"><span class="ico-search"></span></button>
+        </div>
+
+        <div class="search-result-header clearfix">
+            <div class="col" style="padding: 5px">
+                <strong>38</strong> Events found
+            </div>
+            <div class="search-result-header-buttons col last clearfix">
+                <div class="col">Filter</div>
+                <div class="col">Map</div>    
+            </div>
+        </div>
+
+        <div class="search-result-listing">
+            <div class="search-result clearfix">
+                <div class="search-result-thumb col" style="background-image:url(cdn/image/banner_4.jpg);"></div>
+                <div class="search-result-meta col">
+                    <div class="clearfix">
+                        <div class="col">
+                            <div class="search-result-title">1. Rihanna Live</div>
+                            <div class="search-result-venue">Madison Square Garden</div>
+                        </div>
+                        <div class="search-result-distance col last">800 m</div>
+                    </div>
+                    <div class="search-result-info clearfix">
+                        <div class="search-result-date col"><strong>28</strong> OCT</div>
+                        <div class="search-result-time col"><strong>12:00</strong> PM</div>
+                        <div class="search-result-price col last">from <strong>$110</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-result clearfix">
+                <div class="search-result-thumb col" style="background-image:url(cdn/image/thumb_beyonce.jpg);"></div>
+                <div class="search-result-meta col">
+                    <div class="clearfix">
+                        <div class="col">
+                            <div class="search-result-title">2. Beyonce Live</div>
+                            <div class="search-result-venue">Madison Square Garden</div>
+                        </div>
+                        <div class="search-result-distance col last">800 m</div>
+                    </div>
+                    <div class="search-result-info clearfix">
+                        <div class="search-result-date col"><strong>28</strong> OCT</div>
+                        <div class="search-result-time col"><strong>12:00</strong> PM</div>
+                        <div class="search-result-price col last">from <strong>$110</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script type="text/javascript" src="js/vendor/swipe.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
