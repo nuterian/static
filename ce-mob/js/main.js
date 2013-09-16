@@ -13,7 +13,10 @@ window.featuredEventSlider = Swipe(document.getElementById('featuredEventSlider'
 	    }
 	});
 
-var bullets = document.getElementById('position').getElementsByTagName('li');
+var bullets;
+if(document.getElementById('position')){
+	bullets = document.getElementById('position').getElementsByTagName('li');
+}
 
 var $curr_cat_tab = $('.cat-active');
 $('.cat-tab').click(function(){

@@ -1023,6 +1023,14 @@ and (min-width : 321px) {
     padding:8px 14px;
 }
 
+.search-result-meta{
+    width:415px;
+}
+
+.search-result-title, .search-result-venue{
+    max-width:350px;
+}
+
 }
 
 /* ==========================================================================
