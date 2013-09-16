@@ -743,6 +743,7 @@ a.scroll-event:hover{
     padding: 10px 0;
     width:100%;
     border-top:1px solid #ddd;
+    position:relative;
 }
 .search-result:first-child{border:none;}
 
@@ -756,9 +757,11 @@ a.scroll-event:hover{
 }
 
 .search-result-meta{
-    width:255px;
+
     font-size:11px;
     line-height:11px;
+    position: absolute;
+    left:65px;right:0;top:10px;
 }
 
 .search-result-meta strong{
@@ -1017,17 +1020,14 @@ only screen and (min-device-pixel-ratio: 2) {
    ========================================================================== */
 
 @media only screen 
-and (min-width : 321px) {
+and (min-width : 321px) and (orientation:landscape){
 
 .cat-tab{
     padding:8px 14px;
 }
 
-.search-result-meta{
-    width:415px;
-}
-
 .search-result-title, .search-result-venue{
+    width:350px;
     max-width:350px;
 }
 
