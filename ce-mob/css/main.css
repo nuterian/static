@@ -612,7 +612,7 @@ background-image: -ms-linear-gradient(bottom, #005179 0%, #00689C 100%);
 }
 
 .scrollable{
-    width:550px;
+    width:880px;
     white-space: nowrap;
     position: relative;
     left: 0;
@@ -660,6 +660,10 @@ a.scroll-event:hover{
     font-weight:bold;
     overflow:hidden;
     text-overflow:ellipsis;
+}
+
+.event-title{
+    line-height:17px;
 }
 
 .event-info{
