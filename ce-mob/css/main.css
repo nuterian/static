@@ -147,6 +147,10 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.fixed-head{
+    position:fixed; top:0;left:0;right:0;display:block;z-index:99999;
+}
+
 .header-container{
     background-color: #004b97;
     background-image: linear-gradient(bottom, #005179 2%, #00679c 100%);
@@ -542,6 +546,7 @@ background-image: -ms-linear-gradient(bottom, #005179 0%, #00689C 100%);
     position:relative;
     border-bottom:1px solid #bbb;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background:#fff;
 }
 
 .searchbar{
@@ -770,7 +775,7 @@ a.scroll-event:hover{
 
 .search-result-title{
     font-size:13px;
-    line-height:14px;
+    line-height:15px;
     font-weight:bold;
     color:#222;
     margin:0 0 3px 10px;
@@ -784,7 +789,7 @@ a.scroll-event:hover{
 }
 
 .search-result-title, .search-result-venue{
-    max-width:210px;max-height:14px;overflow:hidden;
+    max-width:210px;max-height:15px;overflow:hidden;
 }
 
 .search-result-distance{
