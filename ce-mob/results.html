@@ -163,28 +163,35 @@
             </div>
         </div>
 
-        <div class="filter-wrapper overlay">
-            <div class="sort-filter filter-section">   
-                <div><label>Sort By</label> </div>
-                <div class="btn-group clearfix">
-                    <button class="btn">Date</button>
-                    <button class="btn">Price</button>
-                    <button class="btn btn-selected">Distance</button>
+        <div class="filter-container overlay">
+            <div class="filter-wrapper">
+                <div class="sort-filter filter-section">   
+                    <div><label>Sort By</label> </div>
+                    <div class="btn-group clearfix">
+                        <button class="btn">Date</button>
+                        <button class="btn">Price</button>
+                        <button class="btn btn-selected">Distance</button>
+                    </div>
+                </div>
+
+                <div class="distance-filter filter-section">   
+                    <div><label>Show results within</label> </div>
+                    <div class="btn-group clearfix">
+                        <button class="btn">1km</button>
+                        <button class="btn">5km</button>
+                        <button class="btn">10km</button>
+                        <button class="btn">20km</button>
+                    </div>
+                </div>
+
+                <div class="filter-buttons">      
+                    <button class="btn btn-primary">Filter Results</button>
+                    <button class="btn">Cancel</button>
                 </div>
             </div>
-
-            <div class="distance-filter filter-section">   
-                <div><label>Show results within</label> </div>
-                <div class="btn-group clearfix">
-                    <button class="btn">1km</button>
-                    <button class="btn">5km</button>
-                    <button class="btn">10km</button>
-                    <button class="btn">20km</button>
-                </div>
-            </div>
-
-            <button class="btn btn-primary">Filter Results</button>
         </div>
+
+        <div class="map-container overlay"></div>   
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 

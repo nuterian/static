@@ -26,30 +26,51 @@ $('.cat-tab').click(function(){
 });
 
 var $resultFiltersButton, $resultMapButton;
+hideResultFilters = function(){
+	$searchResultListing.show(); 
+	$filterContainer.hide();	
+	$resultFiltersButton.removeClass('selected');
+}
+showResultFilters = function(){
+	$filterContainer.show();
+	$searchResultListing.hide();
+	$resultFiltersButton.addClass('selected');
+}
+
+hideResultMap = function(){
+	$searchResultListing.show(); 
+	$mapContainer.hide();
+	$resultMapButton.removeClass('selected');	
+}
+showResultMap = function(){
+	$mapContainer.show();
+	$searchResultListing.hide();
+	$resultMapButton.addClass('selected');
+}
+var $filterContainer, $mapContainer, $searchResultListing = $('.search-result-listing');
+
 if($resultFiltersButton = $("#resultFiltersButton")){
-	var $filterWrapper = $('.filter-wrapper');
-	var $searchResultListing = $('.search-result-listing');
+	$filterContainer = $('.filter-container');
 	$(resultFiltersButton).click(function(){
 		if($(this).hasClass('selected')){
-			$(this).removeClass('selected');
-			$searchResultListing.show(); 
-			$filterWrapper.hide();
+			hideResultFilters();
 		}
 		else{
-			$(this).addClass('selected');
-			$filterWrapper.show();
-			$searchResultListing.hide(); 
+			hideResultMap();
+			showResultFilters();
 		}
 	})
 }
 
 if($resultMapButton = $("#resultMapButton")){
+	$mapContainer = $('.map-container')
 	$(resultMapButton).click(function(){
 		if($(this).hasClass('selected')){
-			$(this).removeClass('selected');
+			hideResultMap();
 		}
 		else{
-			$(this).addClass('selected');
+			hideResultFilters();
+			showResultMap();
 		}
 	})
 }
