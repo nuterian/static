@@ -767,9 +767,9 @@ a.scroll-event:hover{
 .search-result:first-child{border:none;}
 
 .search-result-thumb{
-    background-size: 55px auto;
-    width:55px;
-    height: 55px;
+    background-size: 60px auto;
+    width:60px;
+    height: 60px;
     border-radius:3px;
     margin:0 0 0 10px;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
@@ -780,7 +780,7 @@ a.scroll-event:hover{
     font-size:11px;
     line-height:11px;
     position: absolute;
-    left:65px;right:0;top:10px;
+    left:70px;right:0;top:10px;
 }
 
 .search-result-meta strong{
@@ -821,7 +821,7 @@ a.scroll-event:hover{
     margin-right:10px;
 }
 
-.search-result-info{padding: 7px 10px 5px;margin:3px 0 0;border-top:1px solid #eee;color:#888;}
+.search-result-info{padding: 9px 10px 5px;margin:3px 0 0;border-top:1px solid #eee;color:#888;}
 .search-result-date>strong{
     color:#0a5378;
 }
@@ -844,6 +844,7 @@ a.scroll-event:hover{
     font-size:12px;
     display:none;
 }
+.map-container{display:none;}
 
 
 .btn {
