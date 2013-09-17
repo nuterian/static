@@ -31,10 +31,14 @@ if($resultFiltersButton = $("#resultFiltersButton")){
 	$(resultFiltersButton).click(function(){
 		if($(this).hasClass('selected')){
 			$(this).removeClass('selected');
+			document.addEventListener('touchmove', function(event) {
+			     event.preventDefault();
+			}, false);
 			$filterWrapper.hide();
 		}
 		else{
 			$(this).addClass('selected');
+			document.removeEventListener('touchmove');
 			$filterWrapper.show();
 		}
 	})
