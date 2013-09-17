@@ -28,18 +28,17 @@ $('.cat-tab').click(function(){
 var $resultFiltersButton, $resultMapButton;
 if($resultFiltersButton = $("#resultFiltersButton")){
 	var $filterWrapper = $('.filter-wrapper');
+	var $searchResultListing = $('.search-result-listing');
 	$(resultFiltersButton).click(function(){
 		if($(this).hasClass('selected')){
 			$(this).removeClass('selected');
-			document.addEventListener('touchmove', function(event) {
-			     event.preventDefault();
-			}, false);
+			$searchResultListing.show(); 
 			$filterWrapper.hide();
 		}
 		else{
 			$(this).addClass('selected');
-			document.removeEventListener('touchmove');
 			$filterWrapper.show();
+			$searchResultListing.hide(); 
 		}
 	})
 }

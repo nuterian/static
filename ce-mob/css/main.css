@@ -944,7 +944,8 @@ behavior: url(/cdn/htc/PIE.htc);
 }
 
 .sort-filter .btn-group .btn{
-    padding: 6px 31px;
+    padding: 6px 0 6px;
+    width:100px;
 }
 
 .filter-wrapper .btn-primary{
