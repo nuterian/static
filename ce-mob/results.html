@@ -65,8 +65,8 @@
                     <strong>38</strong> Events found
                 </div>
                 <div class="search-result-header-buttons col last clearfix">
-                    <div class="col">Filter</div>
-                    <div class="col">Map</div>    
+                    <div id="resultFiltersButton" class="col">Filter</div>
+                    <div id="resultMapButton" class="col">Map</div>    
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
                 <div class="search-result-meta col">
                     <div class="clearfix">
                         <div class="col">
-                            <div class="search-result-title">1. Rihanna Live</div>
+                            <div class="search-result-title"><span class="search-result-index">1</span> Rihanna Live</div>
                             <div class="search-result-venue">Madison Square Garden</div>
                         </div>
                         <div class="search-result-distance col last">800 m</div>
@@ -95,7 +95,7 @@
                 <div class="search-result-meta col">
                     <div class="clearfix">
                         <div class="col">
-                            <div class="search-result-title">2. Beyonce Live</div>
+                            <div class="search-result-title"><span class="search-result-index">2</span> Beyonce Live</div>
                             <div class="search-result-venue">Madison Square Garden</div>
                         </div>
                         <div class="search-result-distance col last">800 m</div>
@@ -113,7 +113,7 @@
                 <div class="search-result-meta col">
                     <div class="clearfix">
                         <div class="col">
-                            <div class="search-result-title">3. Justin Timberlake and JayZ</div>
+                            <div class="search-result-title"><span class="search-result-index">3</span> Justin Timberlake and JayZ</div>
                             <div class="search-result-venue">Madison Square Garden</div>
                         </div>
                         <div class="search-result-distance col last">1.2 km</div>
@@ -131,7 +131,7 @@
                 <div class="search-result-meta col">
                     <div class="clearfix">
                         <div class="col">
-                            <div class="search-result-title">4. Mob Depp</div>
+                            <div class="search-result-title"><span class="search-result-index">4</span> Mob Depp</div>
                             <div class="search-result-venue">Madison Square Garden</div>
                         </div>
                         <div class="search-result-distance col last">800 m</div>
@@ -149,7 +149,7 @@
                 <div class="search-result-meta col">
                     <div class="clearfix">
                         <div class="col">
-                            <div class="search-result-title">5. Yellowcard</div>
+                            <div class="search-result-title"><span class="search-result-index">5</span> Yellowcard</div>
                             <div class="search-result-venue">Madison Square Garden</div>
                         </div>
                         <div class="search-result-distance col last">2.5 km</div>
@@ -161,6 +161,29 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="filter-wrapper overlay">
+            <div class="sort-filter filter-section">   
+                <div><label>Sort By</label> </div>
+                <div class="btn-group clearfix">
+                    <button class="btn">Date</button>
+                    <button class="btn">Price</button>
+                    <button class="btn btn-selected">Distance</button>
+                </div>
+            </div>
+
+            <div class="distance-filter filter-section">   
+                <div><label>Show results within</label> </div>
+                <div class="btn-group clearfix">
+                    <button class="btn">1km</button>
+                    <button class="btn">5km</button>
+                    <button class="btn">10km</button>
+                    <button class="btn">20km</button>
+                </div>
+            </div>
+
+            <button class="btn btn-primary">Filter Results</button>
         </div>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>

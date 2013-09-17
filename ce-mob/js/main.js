@@ -24,3 +24,29 @@ $('.cat-tab').click(function(){
 	$curr_cat_tab = $(this);
 	$curr_cat_tab.addClass('cat-active');
 });
+
+var $resultFiltersButton, $resultMapButton;
+if($resultFiltersButton = $("#resultFiltersButton")){
+	var $filterWrapper = $('.filter-wrapper');
+	$(resultFiltersButton).click(function(){
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+			$filterWrapper.hide();
+		}
+		else{
+			$(this).addClass('selected');
+			$filterWrapper.show();
+		}
+	})
+}
+
+if($resultMapButton = $("#resultMapButton")){
+	$(resultMapButton).click(function(){
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+		}
+		else{
+			$(this).addClass('selected');
+		}
+	})
+}
