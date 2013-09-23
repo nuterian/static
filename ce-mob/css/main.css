@@ -696,19 +696,20 @@ a.scroll-event:hover{
 }
 
 .footer{
-    font-size:9px;
+    background-color:#eee;
+    font-size:11px;
     line-height:20px;
-    color:#888;
-    padding: 10px 0;
-    margin:10px 0 0;
+    color:#999;
+    text-shadow: 0 1px 0 #fff;
+    padding: 15px 0;
     text-align: center;
     border-top:1px solid #ccc;
 }
 
-.footer-links > a{
-    color:#004a96;
-    padding:0 10px;
-    text-transform: uppercase;
+.footer-links > a:link, .footer-links > a:visited{
+    color:#666;
+    font-weight:bold;
+    padding:0 10px 10px;
 }
 
 
@@ -851,7 +852,7 @@ a.scroll-event:hover{
 .map-container{display:none;}
 
 
-.btn {
+.btn, .event-tickets-header {
     display: inline-block;
     padding: 5px 10px;
     margin-bottom: 0;
@@ -1015,8 +1016,8 @@ height:70px;
 }
 
 .event-banner-month{
-    font-size:12px;
-    line-height:16px;
+    font-size:11px;
+    line-height:15px;
     text-transform: uppercase;
 }
 
@@ -1054,13 +1055,77 @@ height:70px;
     background-image: url(../cdn/image/map.jpg);
 }
 
+.event-detail{padding:10px 0;}
+.event-detail-para{
+    padding-right:10px;
+    width:265px;
+    font-size:12px;    
+}
+
+.event-tickets-header{
+    width:100%;
+    box-sizing:border-box;
+    border-left: none;
+    border-right: none;
+    border-radius:0;
+    text-align: left;
+    text-transform: uppercase;
+    color:#666;
+    font-size:14px;
+    line-height:24px;
+}
+.event-ticket-source{
+    border-top:1px solid #ddd;
+}
+
+.event-ticket-source:first-child{border:none;}
+.event-ticket-price-from{
+    color:#aaa;
+    font-size:11px;
+}
+.event-ticket-price{
+    color:#008826;
+    font-weight:bold;
+
+}
+
+.event-ticket-source{
+    padding:8px 0;
+}
+.event-ticket-source-name{
+    font-size:14px;
+    padding-left:10px;
+    font-weight:bold;
+    color:#333;
+}
+
+
+.ico-event-detail, .ico-forward{  
+    opacity:0.4;
+}
+
+.ico-event-detail{
+    background: url(../cdn/image/ico_event_info.svg) no-repeat;  
+    margin:16px 10px 0 10px;
+    width:24px;height:24px;background-size: 24px 24px;
+}
+
+.ico-forward{
+    background: url(../cdn/image/ico_forward_black.svg) no-repeat;  
+    display: inline-block;
+    width:16px;height:16px;background-size: 16px 16px;
+    margin: 0 10px 0 5px;
+    vertical-align: middle;
+    opacity:0.2;
+}
+
 .ico-location{
     background: url(../cdn/image/ico_location.svg) no-repeat;
 }
 .ico-time{
     background: url(../cdn/image/ico_time.svg) no-repeat;   
 }
-.ico-location, .ico-time{
+.ico-location, .ico-time, {
     width:12px;
     height:12px;
     line-height:16px;
