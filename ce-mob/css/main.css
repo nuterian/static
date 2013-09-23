@@ -1053,6 +1053,7 @@ height:70px;
 .event-map{
     height:80px;width:100%;
     background-image: url(../cdn/image/map.jpg);
+    background-position: -150px -30px
 }
 
 .event-detail{padding:10px 0;}
@@ -1076,6 +1077,8 @@ height:70px;
 }
 .event-ticket-source{
     border-top:1px solid #ddd;
+    padding:10px 0;
+    display:block;
 }
 
 .event-ticket-source:first-child{border:none;}
@@ -1089,9 +1092,6 @@ height:70px;
 
 }
 
-.event-ticket-source{
-    padding:8px 0;
-}
 .event-ticket-source-name{
     font-size:14px;
     padding-left:10px;
