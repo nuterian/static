@@ -996,6 +996,7 @@ height:70px;
 .event-banner-art{
     box-shadow: inset 0 1px 16px rgba(0,0,0,0.6);
     background-size:  320px auto;
+    background-position: 0 -30px;
     background-repeat: none;
 }
 
@@ -1022,7 +1023,6 @@ height:70px;
 .event-banner-head{
     color:#fff;
     text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-    font-family:"PT Sans";
     width:100%;
     position: absolute;
     bottom:0;left:0; 
@@ -1032,14 +1032,14 @@ height:70px;
     margin-bottom:10px;
 }
 .event-banner-title{
-    font-size:16px;
+    font-size:14px;
     line-height:16px;
     font-weight:bold;
 }
 
 .event-banner-venue, .event-banner-time{
     text-transform: uppercase;
-    font-size:11px;
+    font-size:10px;
     line-height:12px;
     opacity:0.9;
 }
