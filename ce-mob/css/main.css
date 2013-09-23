@@ -267,7 +267,7 @@ header{padding:5px 0;}
 }
 
 .location-temp{
-    font-size:12px;
+    font-size:13px;
     font-weight:bold;
     line-height:18px;
     position:absolute;
@@ -1132,121 +1132,7 @@ height:70px;
     background-size: 12px 12px;
     display:inline-block;
 }
-/*
-.event-listing{
-    list-style: none;
-    margin:0; padding:0;
-}
 
-.event-listing > li{
-    float:left;
-    width:140px;
-    margin-bottom:15px;
-    margin-left:10px;
-}
-
-.event-listing > li:nth-child(odd) {
-    margin-left:15px;
-}
-
-.listing-thumb-container{width:140px; height:120px; position: relative;}
-
-.listing-thumb{
-    width:100%;
-    height:100%;
-    border-radius:3px;
-}
-
-.listing-info-highlight{
-    position: absolute;
-    bottom:0;
-    left:0;
-}   
-
-.listing-info-highlight{
-    width:100%;
-    background:url(../cdn/image/thumb_highlight.png) repeat-x;
-    background-size:1px 50px;
-    height:50px;
-    z-index:0;
-    border-bottom-left-radius:3px;
-    border-bottom-right-radius:3px;
-}
-
-.listing-thumb-info, .listing-title{color:#fff}
-
-.listing-followers{
-    position: absolute;
-    top:6px;
-    right:6px;
-    background-color:rgba(0,0,0,0.5);
-    border-radius:3px;
-    padding: 0 8px;
-    font-size:10px; line-height:20px; 
-}
-
-.listing-title-container{
-    display:table; 
-    width:100%; 
-    height:50px; 
-    overflow:hidden;
-    position:absolute; 
-    bottom:0; left: 0;
-    z-index:5;
-}
-
-.listing-title{
-    display:table-cell; 
-    color:#fff; 
-    font-size:12px; 
-    line-height:15px;
-    vertical-align:bottom; 
-    padding: 0 6px 6px;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.8);
-}
-
-.listing-info{
-    padding-top:5px;
-}
-
-.listing-venue{
-    text-transform: uppercase;
-    color:#444;
-    font-size:11px;
-    line-height:14px;
-    height:28px;
-}
-
-/*
-.listing-thumb{
-    width:80px;
-    height:70px;
-    background:#ddd;
-    margin-right:10px;
-}
-
-.listing-title{
-    margin: 0 0 5px;
-    padding:0;
-    font-size:14px;
-    line-height:17px;
-    font-weight:bold;
-}
-
-.listing-venue, .listing-address{
-    font-size:11px;
-    line-height:16px;
-}
-
-.listing-venue{
-    text-transform: uppercase;
-    color:#000;
-}
-
-.listing-address{
-    color:#888;
-}
-*/
 
 a:link, a:visited{
     color:#0F36D4;
@@ -1363,6 +1249,17 @@ and (min-width : 321px) and (orientation:landscape){
     width:350px;
     max-width:350px;
 }
+
+.event-detail-para{
+    width: 425px;
+}
+
+.event-banner-art{
+    background-size:480px auto;
+    background-position: 0 -50px;
+}
+
+.event-map{background-position:-80px -30px;}
 
 }
 
