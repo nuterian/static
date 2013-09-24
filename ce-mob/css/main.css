@@ -1116,9 +1116,16 @@ height:70px;
     background: url(../cdn/image/ico_forward_black.svg) no-repeat;  
     display: inline-block;
     width:16px;height:16px;background-size: 16px 16px;
-    margin: 0 10px 0 5px;
+    margin: 0 7px 0 5px;
     vertical-align: middle;
     opacity:0.2;
+}
+
+.map{
+    position: absolute;
+    top:68px;left:0;right:0;bottom:0;
+    background-image:url(../cdn/image/map.jpg);
+    display:none;
 }
 
 .ico-location{
