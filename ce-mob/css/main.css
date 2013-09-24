@@ -1200,7 +1200,8 @@ body.modal-mode{overflow:hidden;position: fixed;}
 
 #locationModal ul{list-style: none;margin:0;padding:0;}
 #locationModal li{text-align:left;border-bottom:1px solid #ddd;border-top:1px solid #fff;}
-#locationModal li a:link{display:block;font-weight: bold;color:#666; text-shadow: 0 1px 0 #fff; padding:5px 10px;}
+#locationModal li a:link{display:block;font-weight: bold; text-shadow: 0 1px 0 #fff; padding:5px 10px;}
+#locationModal li a:link, #locationModal li a:visited{color:#666;}
 #locationModal li a:hover{text-decoration:none;background-color:#D5E7F7;}
 .modal-show {
     visibility: visible;
