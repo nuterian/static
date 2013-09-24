@@ -13,6 +13,12 @@ window.featuredEventSlider = Swipe(document.getElementById('featuredEventSlider'
 	    }
 	});
 
+$("#headerLocation").click(function(){
+	$(this).addClass('loading');
+	var t = $(this);
+	setTimeout(function() { t.removeClass('loading'); }, 3000);
+});
+
 var bullets;
 if(document.getElementById('position')){
 	bullets = document.getElementById('position').getElementsByTagName('li');

@@ -203,6 +203,10 @@ header{padding:5px 0;}
     border-left: 1px solid #004163;
     box-shadow: inset 1px 0 0 rgba(255,255,255,0.2);
 }
+#headerLocation>span.loader{display:none;background-image:url(../cdn/image/loader_location.gif);width:18px;height:18px;background-size:18px 18px;margin-top:11px;}
+#headerLocation.loading{background:#00476b;box-shadow: inset 1px 0 1px rgba(0,0,0,0.2);}
+#headerLocation.loading>img.icon{display:none;}
+#headerLocation.loading>span.loader{display:inline-block;}
 
 .subheader-container{
     background-color:#1D4357;
@@ -345,16 +349,7 @@ header{padding:5px 0;}
 .main{
     padding-top:10px;
 }
-
-.trending-events h2{
-    font-family: sans-serif;
-    font-size:13px;
-    font-weight:bold;
-    color:#444;
-    text-shadow: inset 0 1px 0 #000;
-    margin: 5px 0 0px 10px;
-    text-transform: uppercase;
-}
+.trending-events{overflow:hidden;box-shadow: 0 -1px 4px rgba(0,0,0,0.1);}
 
 .banner-wrapper{
     background-image: linear-gradient(bottom, #ADADAD 0%, #DFDFDF 100%);
@@ -362,11 +357,11 @@ header{padding:5px 0;}
     background-image: -moz-linear-gradient(bottom, #ADADAD 0%, #DFDFDF 100%);
     background-image: -webkit-linear-gradient(bottom, #ADADAD 0%, #DFDFDF 100%);
     background-image: -ms-linear-gradient(bottom, #ADADAD 0%, #DFDFDF 100%);
+    margin-top:140px;
 }
 
 .banner{
     padding:10px 0 5px;
-    margin-bottom:5px;
 }
 
 .banner-title{
@@ -618,7 +613,7 @@ background-image: -ms-linear-gradient(bottom, #005179 0%, #00689C 100%);
 }
 
 .scrollable{
-    width:880px;
+    width:1210px;
     white-space: nowrap;
     position: relative;
     left: 0;
@@ -712,7 +707,7 @@ a.scroll-event:hover{
     padding:0 10px 10px;
 }
 
-
+.search-result-listing{margin-top:182px;padding-bottom:10px;}
 .search-result-header{
     background:#B2D6E9;
     background-image: linear-gradient(bottom, #B2D6E9 0%, #DEEFF7 100%);
@@ -852,7 +847,7 @@ a.scroll-event:hover{
 .map-container{display:none;}
 
 
-.btn, .event-tickets-header {
+.btn, .section-header {
     display: inline-block;
     padding: 5px 10px;
     margin-bottom: 0;
@@ -1065,9 +1060,10 @@ height:70px;
     vertical-align: top;
 }
 
-.event-tickets-header{
+.event-tickets{border-bottom:1px solid #bbb;overflow: hidden}
+
+.section-header{
     width:100%;
-    box-sizing:border-box;
     border-left: none;
     border-right: none;
     border-radius:0;
@@ -1076,6 +1072,7 @@ height:70px;
     color:#666;
     font-size:14px;
     line-height:24px;
+    border-color:#bbb;
 }
 .event-ticket-source{
     border-top:1px solid #ddd;
@@ -1174,6 +1171,11 @@ only screen and (min-device-pixel-ratio: 2) {
     .cat-ico{
         background-image: url(../cdn/image/ico_categories@2x.png);
         background-size: 64px 32px;
+    }
+
+    #headerLocation>span.loader{
+        background-image:url(../cdn/image/loader_location@2x.gif);
+        background-size: 36px 36px;
     }
 
 }

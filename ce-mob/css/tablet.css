@@ -26,6 +26,8 @@ header{padding:10px 0;}
     top:0px;
 }
 
+#headerLocation>span.loader{margin-top:16px;}
+
 .location{
     padding:3px 0;
 }
@@ -37,6 +39,8 @@ header{padding:10px 0;}
 .location-temp{
     font-size:14px;
 }
+.banner-wrapper{margin-top:167px;}
+.subheader-container{background-size: auto 67px;}
 
 .search-input{
     font-size:16px;
@@ -68,11 +72,14 @@ header{padding:10px 0;}
 
 .event-art{
     width: 400px;
-    height:200px;
+    height:240px;
     background-size: 400px auto;
     background-position: 0 -40px;
     border-radius:3px;
 }
+.event-slide-name{font-size:14px;}
+
+.search-result-listing{margin-top:206px;}
 
 .event-top-wrapper{
     background:#363f44;
@@ -91,8 +98,8 @@ header{padding:10px 0;}
 }
 
 .event-detail, .event-tickets{border-left:1px solid #aaa;border-right:1px solid #aaa;background:#fff;}
-.event-detail{border-top:1px solid #ddd;width:568px;}
-.event-tickets{border-bottom:1px solid #aaa;border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
+.event-tickets{width:566px}
+.event-detail{border-bottom:1px solid #aaa;border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
 .event-banner{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -108,5 +115,4 @@ header{padding:10px 0;}
     background-size:568px auto;
 }
 
-.event-tickets-header{width:568px;}
 .footer{border:none;}
