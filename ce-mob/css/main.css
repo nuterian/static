@@ -1175,7 +1175,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
     #headerLocation>span.loader{
         background-image:url(../cdn/image/loader_location@2x.gif);
-        background-size: 36px 36px;
+        background-size: 18px 18px;
     }
 
 }

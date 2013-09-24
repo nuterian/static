@@ -31,33 +31,37 @@ $('.cat-tab').click(function(){
 	$curr_cat_tab.addClass('cat-active');
 });
 
-var $resultFiltersButton, $resultMapButton;
-hideResultFilters = function(){
-	$searchResultListing.show(); 
-	$filterContainer.hide();	
-	$resultFiltersButton.removeClass('selected');
-}
-showResultFilters = function(){
-	$filterContainer.show();
-	$searchResultListing.hide();
-	$resultFiltersButton.addClass('selected');
-}
 
-hideResultMap = function(){
-	$searchResultListing.show(); 
-	$mapContainer.hide();
-	$resultMapButton.removeClass('selected');	
-}
-showResultMap = function(){
-	$mapContainer.show();
-	$searchResultListing.hide();
-	$resultMapButton.addClass('selected');
-}
-var $filterContainer, $mapContainer, $searchResultListing = $('.search-result-listing');
+$resultFiltersButton = $("#resultFiltersButton");
+$resultMapButton = $("#resultMapButton");
 
-if($resultFiltersButton = $("#resultFiltersButton")){
+if($resultFiltersButton){
+
+	var $resultFiltersButton, $resultMapButton;
+	hideResultFilters = function(){
+		$searchResultListing.show(); 
+		$filterContainer.hide();	
+		$resultFiltersButton.removeClass('selected');
+	}
+	showResultFilters = function(){
+		$filterContainer.show();
+		$searchResultListing.hide();
+		$resultFiltersButton.addClass('selected');
+	}
+
+	hideResultMap = function(){
+		$searchResultListing.show(); 
+		$mapContainer.hide();
+		$resultMapButton.removeClass('selected');	
+	}
+	showResultMap = function(){
+		$mapContainer.show();
+		$searchResultListing.hide();
+		$resultMapButton.addClass('selected');
+	}
+	var $filterContainer, $mapContainer, $searchResultListing = $('.search-result-listing');
 	$filterContainer = $('.filter-container');
-	$(resultFiltersButton).click(function(){
+	$resultFiltersButton.click(function(){
 		if($(this).hasClass('selected')){
 			hideResultFilters();
 		}
@@ -65,12 +69,10 @@ if($resultFiltersButton = $("#resultFiltersButton")){
 			hideResultMap();
 			showResultFilters();
 		}
-	})
-}
+	});
 
-if($resultMapButton = $("#resultMapButton")){
 	$mapContainer = $('.map-container')
-	$(resultMapButton).click(function(){
+	$resultMapButton.click(function(){
 		if($(this).hasClass('selected')){
 			hideResultMap();
 		}
