@@ -148,7 +148,7 @@ nav a:hover {
    ========================================================================== */
 
 .fixed-head{
-    position:fixed; top:0;left:0;right:0;display:block;z-index:99999;
+    position:fixed; top:0;left:0;right:0;display:block;z-index:1000;
 }
 
 .header-container{
@@ -161,7 +161,7 @@ nav a:hover {
     color:#fff;
     border-bottom: 1px solid #003a76;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    z-index:999999;
+    z-index:1000;
     position: relative;
     height: 40px;
 }
@@ -829,7 +829,7 @@ a.scroll-event:hover{
 .search-result-price>strong{background-color:#70b85f;color:#fff;padding:2px 4px; border-radius:3px;}
 
 
-.overlay{position:absolute; top:180px;left:0;right:0;bottom:0;z-index:99998; min-height:280px;}
+.overlay{position:absolute; top:180px;left:0;right:0;bottom:0;z-index:999; min-height:280px;}
 .filter-wrapper{
     width:300px;
     margin:0 auto;
@@ -847,7 +847,7 @@ a.scroll-event:hover{
 .map-container{display:none;}
 
 
-.btn, .section-header {
+.btn, .section-header, .modal h3 {
     display: inline-block;
     padding: 5px 10px;
     margin-bottom: 0;
@@ -1062,7 +1062,7 @@ height:70px;
 
 .event-tickets{border-bottom:1px solid #bbb;overflow: hidden}
 
-.section-header{
+.section-header, .modal h3{
     width:100%;
     border-left: none;
     border-right: none;
@@ -1137,6 +1137,91 @@ height:70px;
     line-height:16px;
     background-size: 12px 12px;
     display:inline-block;
+}
+
+
+/* ==========================================================================
+   Modal classes
+   ========================================================================== */
+
+.modal{
+    position:fixed;
+    top:50%;
+    left: 50%;
+    width: 200px;
+    margin-top: -100px;
+    margin-left:-120px;
+    max-width: 280px;
+    min-width: 240px;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+    background:#fff;
+    border-radius:4px;
+    overflow:hidden;
+    text-align:center;
+    font-size: 12px;
+    color:#999;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.4);
+}
+
+body.modal-mode{overflow:hidden;position: fixed;}
+
+.modal h3{
+    font-size:12px;
+    margin: 0;
+    width:100%;
+    box-sizing:border-box;
+    text-align: center;
+}
+#locationModal{
+    background:#eee;
+    margin-top:-130px;
+}
+
+#locationLoaderStatus{
+    background-color:#E4EFF7;
+    color:#457CA3;
+    border-bottom:1px solid #ddd;
+    padding: 2px 0;
+}
+#locationModal input{
+    font-size:14px;
+    line-height:20px;
+    border:none;
+    border-bottom:1px solid #ddd;
+    width:100%;
+    box-sizing:border-box;
+    outline: 0;
+    padding: 10px 5px;
+}
+
+#locationModal ul{list-style: none;margin:0;padding:0;}
+#locationModal li{text-align:left;border-bottom:1px solid #ddd;border-top:1px solid #fff;}
+#locationModal li a:link{display:block;font-weight: bold;color:#666; text-shadow: 0 1px 0 #fff; padding:5px 10px;}
+#locationModal li a:hover{text-decoration:none;background-color:#D5E7F7;}
+.modal-show {
+    visibility: visible;
+}
+
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+
+.modal-show ~ .modal-overlay {
+    opacity: 1;
+    visibility: visible;
 }
 
 

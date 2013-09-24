@@ -14,9 +14,21 @@ window.featuredEventSlider = Swipe(document.getElementById('featuredEventSlider'
 	});
 
 $("#headerLocation").click(function(){
+	$("#locationLoaderStatus").html("Getting your location...");
+	$("#locationModal").addClass('modal-show');
+	$("#locationInput").focus();
+	$("body").addClass('modal-mode');
+	$(".modal-overlay").click(function(){
+		$("body").removeClass('modal-mode');
+		$("#locationModal").removeClass('modal-show');
+	});
 	$(this).addClass('loading');
 	var t = $(this);
-	setTimeout(function() { t.removeClass('loading'); }, 3000);
+	setTimeout(function() { 
+			t.removeClass('loading');
+			$("#locationLoaderStatus").html("<strong>New York City</strong>, NY");
+	}, 
+	3000);
 });
 
 var bullets;
